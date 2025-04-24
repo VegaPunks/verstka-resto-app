@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Resto App</title>
+	</head>
+
+	<body>
+		<aside class="bubble">
+			<span class="bubble-title">Бесплатная доставка от&nbsp;1&nbsp;000&nbsp;₽</span>
+			<button class="bubble-button" type="button" title="Закрыть" aria-label="">
+				<svg class="bubble-close" width="8" height="8" viewBox="0 0 8 8">
+					<use href="./sprite.svg#close"></use>
+				</svg>
+			</button>
+		</aside>
+		<header class="header">
+			<div class="header-inner container">
+				<a href="#" class="header-logo">
+					<img class="header-img" src="./images/icon/logo.svg" alt="Логотип" width="137" height="22" />
+				</a>
+				<nav class="header-nav">
+					<ul class="header-nav__lists">
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">Меню</a>
+						</li>
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">Акции</a>
+						</li>
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">О&nbsp;нас</a>
+						</li>
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">События</a>
+						</li>
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">Зоны доставки</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header-action">
+					<div class="header-contact">
+						<a href="tel:01234567890" class="header-contact__number">+0 (123) 456 78-90</a>
+						<p class="header-contact__open">
+							Прием заказов с&nbsp;<time datetime="10:00">10:00</time> до
+							<time datetime="22:40">22:40</time>
+						</p>
+					</div>
+					<div class="header-buttons">
+						<button class="header-buttons__btn" type="button" title="Профиль">
+							<span class="visually-hidden">Профиль</span>
+							<svg class="header-buttons__icon" viewBox="0 0 16 20" width="16" height="20">
+								<use class="header-buttons__color" href="sprite.svg#user"></use>
+							</svg>
+						</button>
+						<button class="header-buttons__btn is-current-btn" type="button" title="Корзина">
+							<span class="visually-hidden">Корзина</span>
+							<svg class="header-buttons__icon" viewBox="0 0 18 18" width="18" height="18">
+								<use class="header-buttons__color" href="sprite.svg#cart"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<h1 class="visually-hidden">Resto App&nbsp;&mdash; выбирай рестораны с&nbsp;умом и&nbsp;вкусом</h1>
+			<section class="menu container">
+				<h2 class="menu-title">Меню</h2>
+				<ul class="menu-categories">
+					<li class="menu-categories__item menu-categories__item-shadow">
+						<a href="#" class="menu-categories__link">
+							<picture>
+								<source srcset="./images/avif/menu/pizza.avif" type="image/avif" />
+								<source srcset="./images/webp/menu/pizza.webp" type="image/webp" />
+								<img
+									class="menu-categories__image"
+									src="./images/jpg/menu/pizza.jpg"
+									alt="Пицца"
+									width="304"
+									height="304"
+								/>
+							</picture>
+							<h3 class="menu-categories__title">Пицца</h3>
+						</a>
+					</li>
+					<li class="menu-categories__item menu-categories__item-shadow">
+						<a href="#" class="menu-categories__link">
+							<picture>
+								<source srcset="./images/avif/menu/soup.avif" type="image/avif" />
+								<source srcset="./images/webp/menu/soup.webp" type="image/webp" />
+								<img
+									class="menu-categories__image"
+									src="./images/jpg/menu/soup.jpg"
+									alt="Супы"
+									width="304"
+									height="304"
+								/>
+							</picture>
+							<h3 class="menu-categories__title">Супы</h3>
+						</a>
+					</li>
+					<li class="menu-categories__item menu-categories__item-shadow">
+						<a href="#" class="menu-categories__link">
+							<picture>
+								<source srcset="./images/avif/menu/dishes.avif" type="image/avif" />
+								<source srcset="./images/webp/menu/dishes.webp" type="image/webp" />
+								<img
+									class="menu-categories__image"
+									src="./images/jpg/menu/dishes.jpg"
+									alt="Горячие блюда"
+									width="304"
+									height="304"
+								/>
+							</picture>
+							<h3 class="menu-categories__title">Горячие блюда</h3>
+						</a>
+					</li>
+					<li class="menu-categories__item menu-categories__item-shadow">
+						<a href="#" class="menu-categories__link">
+							<picture>
+								<source srcset="./images/avif/menu/salad.avif" type="image/avif" />
+								<source srcset="./images/webp/menu/salad.webp" type="image/webp" />
+								<img
+									class="menu-categories__image"
+									src="./images/jpg/menu/salad.jpg"
+									alt="Салаты"
+									width="304"
+									height="304"
+								/>
+							</picture>
+							<h3 class="menu-categories__title">Салаты</h3>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section class="menu container">
+				<h2 class="menu-title">Новинки</h2>
+				<ul class="menu-categories">
+					<li class="menu-categories__item">
+						<a href="#" class="menu-categories__link menu-category-spacing">
+							<picture class="menu-categories__image-container">
+								<source srcset="./images/avif/latest-arrivals/egg-drop-soup.avif" type="image/avif" />
+								<source srcset="./images/webp/latest-arrivals/egg-drop-soup.webp" type="image/webp" />
+								<img
+									class="menu-categories__image"
+									src="./images/jpg/latest-arrivals/egg-drop-soup.jpg"
+									alt="Китайский яичный суп"
+									width="304"
+									height="304"
+								/>
+							</picture>
+							<ul class="badges">
+								<li class="badges-item badges-item-vegetarian">
+									<svg class="badges-vegetarian" width="16" height="16" viewBox="0 0 16 16">
+										<title>Вегетарианец</title>
+										<use href="./sprite.svg#vegetarian"></use>
+									</svg>
+								</li>
+							</ul>
+							<div class="menu-categories__content">
+								<h3 class="menu-categories__content-title">Китайский яичный суп</h3>
+								<p class="menu-categories__content-description">
+									Традиционный китайский суп с&nbsp;яйцом и&nbsp;томатами черри</p
+								>
+							</div>
+						</a>
+						<button type="button" title="Добавить в корзину" class="menu-categories__btn button-disabled" disabled
+							>350&nbsp;₽
+						</button>
+					</li>
+
+					<li class="menu-categories__item">
+						<a href="#" class="menu-categories__link menu-category-spacing">
+							<picture class="menu-categories__image-container">
+								<source srcset="./images/avif/latest-arrivals/egg-soup.avif" type="image/avif" />
+								<source srcset="./images/webp/latest-arrivals/egg-soup.webp" type="image/webp" />
+								<img
+									class="menu-categories__image"
+									src="./images/jpg/latest-arrivals/egg-soup.jpg"
+									alt="Паэлья"
+									width="304"
+									height="304"
+								/>
+							</picture>
+							<ul class="badges">
+								<li class="badges-item badges-item-vegetarian">
+									<svg class="badges-vegetarian" width="16" height="16" viewBox="0 0 16 16">
+										<title>Вегетарианец</title>
+										<use href="./sprite.svg#vegetarian"></use>
+									</svg>
+								</li>
+							</ul>
+							<div class="menu-categories__content">
+								<h3 class="menu-categories__content-title">Паэлья</h3>
+								<p class="menu-categories__content-description">
+									Традиционное испанское блюдо&nbsp;&mdash; рис, колбаски чоризо, куриное бедро, кальмар, кукуруза,
+									горошек, специи</p
+								>
+							</div>
+						</a>
+						<button type="button" title="Добавить в корзину" class="menu-categories__btn button-disabled" disabled
+							>660&nbsp;₽
+						</button>
+					</li>
+
+					<li class="menu-categories__item">
+						<a href="#" class="menu-categories__link menu-category-spacing">
+							<picture class="menu-categories__image-container">
+								<source srcset="./images/avif/latest-arrivals/beef-bourg.avif" type="image/avif" />
+								<source srcset="./images/webp/latest-arrivals/beef-bourg.webp" type="image/webp" />
+								<img
+									class="menu-categories__image"
+									src="./images/jpg/latest-arrivals/beef-bourg.jpg"
+									alt="Биф Бургеньон"
+									width="304"
+									height="304"
+								/>
+							</picture>
+							<div class="menu-categories__content">
+								<h3 class="menu-categories__content-title">Биф Бургеньон</h3>
+								<p class="menu-categories__content-description">
+									Блюдо французской кухни&nbsp;&mdash; тушёные кусочки говядины с&nbsp;картофелем и&nbsp;болгарским
+									перцем</p
+								>
+							</div>
+						</a>
+						<button type="button" title="Добавить в корзину" class="menu-categories__btn button-disabled" disabled
+							>630&nbsp;₽
+						</button>
+					</li>
+
+					<li class="menu-categories__item">
+						<a href="#" class="menu-categories__link menu-category-spacing">
+							<picture class="menu-categories__image-container">
+								<source srcset="./images/avif/latest-arrivals/smash-cucumbers.avif" type="image/avif" />
+								<source srcset="./images/webp/latest-arrivals/smash-cucumbers.webp" type="image/webp" />
+								<img
+									class="menu-categories__image"
+									src="./images/jpg/latest-arrivals/smash-cucumbers.jpg"
+									width="304"
+									height="304"
+									alt="Битые огурцы"
+								/>
+							</picture>
+							<ul class="badges">
+								<li class="badges-item badges-item-vegetarian">
+									<svg class="badges-vegetarian" width="16" height="16" viewBox="0 0 16 16">
+										<title>Вегетарианец</title>
+										<use href="./sprite.svg#vegetarian"></use>
+									</svg>
+								</li>
+							</ul>
+							<div class="menu-categories__content">
+								<h3 class="menu-categories__content-title">Битые огурцы</h3>
+								<p class="menu-categories__content-description">
+									Салат из&nbsp;свежих битых огурцов с&nbsp;уйгурским соусом, кешью и&nbsp;кунжутом</p
+								>
+							</div>
+						</a>
+						<button type="button" title="Добавить в корзину" class="menu-categories__btn button-disabled" disabled
+							>320&nbsp;₽
+						</button>
+					</li>
+				</ul>
+			</section>
+
+			<section class="menu container">
+				<h2 class="menu-title">Популярное</h2>
+				<ul class="menu-categories common-list">
+					<li class="menu-categories__item">
+						<a href="#" class="menu-categories__link menu-category-spacing">
+							<picture class="menu-categories__image-container">
+								<source srcset="./images/avif/popular/pepperoni.avif" type="image/avif" />
+								<source srcset="./images/webp/popular/pepperoni.webp" type="image/webp" />
+								<img
+									class="menu-categories__image"
+									src="./images/jpg/popular/pepperoni.jpg"
+									alt="Пепперони"
+									width="304"
+									height="304"
+									loading="lazy"
+								/>
+							</picture>
+							<div class="menu-categories__content">
+								<h3 class="menu-categories__content-title">Пепперони</h3>
+								<p class="menu-categories__content-description">
+									Просто и&nbsp;вкусно&nbsp;&mdash; томатная основа маринара, колбаски пепперони и&nbsp;сыр моцарелла</p
+								>
+							</div>
+						</a>
+						<button type="button" title="Добавить в корзину" class="menu-categories__btn button-disabled" disabled
+							>660&nbsp;₽
+						</button>
+					</li>
+
+					<li class="menu-categories__item">
+						<a href="#" class="menu-categories__link menu-category-spacing">
+							<picture class="menu-categories__image-container">
+								<source srcset="./images/avif/popular/pear-gorgonzola.avif" type="image/avif" />
+								<source srcset="./images/webp/popular/pear-gorgonzola.webp" type="image/webp" />
+								<img
+									class="menu-categories__image"
+									src="./images/jpg/popular/pear-gorgonzola.jpg"
+									alt="Груша Горгонзола"
+									width="304"
+									height="304"
+									loading="lazy"
+								/>
+							</picture>
+							<ul class="badges">
+								<li class="badges-item badges-item-vegetarian">
+									<svg class="badges-vegetarian" width="16" height="16" viewBox="0 0 16 16">
+										<title>Вегетарианец</title>
+										<use href="./sprite.svg#vegetarian"></use>
+									</svg>
+								</li>
+							</ul>
+							<div class="menu-categories__content">
+								<h3 class="menu-categories__content-title">Груша Горгонзола</h3>
+								<p class="menu-categories__content-description">
+									Нежная пицца на&nbsp;основе сливочного соуса с&nbsp;сыром горгондзола, грушей, медом и&nbsp;кедровыми
+									орехами</p
+								>
+							</div>
+						</a>
+						<button type="button" title="Добавить в корзину" class="menu-categories__btn button-disabled" disabled
+							>780&nbsp;₽
+						</button>
+					</li>
+
+					<li class="menu-categories__item">
+						<a href="#" class="menu-categories__link menu-category-spacing">
+							<picture class="menu-categories__image-container">
+								<source srcset="./images/avif/popular/fobo.avif" type="image/avif" />
+								<source srcset="./images/webp/popular/fobo.webp" type="image/webp" />
+								<img
+									class="menu-categories__image"
+									src="./images/jpg/popular/fobo.jpg"
+									alt="Фо Бо"
+									width="304"
+									height="304"
+									loading="lazy"
+								/>
+							</picture>
+							<div class="menu-categories__content">
+								<h3 class="menu-categories__content-title">Фо&nbsp;Бо</h3>
+								<p class="menu-categories__content-description">
+									Вьетнамский суп с&nbsp;рисовой лапшой, в&nbsp;котором используется говядина, свежая зелень
+									и&nbsp;ростки сои. Подают с&nbsp;добавками, такими как мята, долька лайма, острый соус шрирача,
+									азиатский уксус и&nbsp;лаоганма</p
+								>
+							</div>
+						</a>
+						<button type="button" title="Добавить в корзину" class="menu-categories__btn button-disabled" disabled
+							>490&nbsp;₽
+						</button>
+					</li>
+
+					<li class="menu-categories__item">
+						<a href="#" class="menu-categories__link menu-category-spacing">
+							<picture class="menu-categories__image-container">
+								<source srcset="./images/avif/popular/seafood-tom-yum.avif" type="image/avif" />
+								<source srcset="./images/webp/popular/seafood-tom-yum.webp" type="image/webp" />
+								<img
+									class="menu-categories__image"
+									src="./images/jpg/popular/seafood-tom-yum.jpg"
+									alt="Том Ям с морепродуктами"
+									width="304"
+									height="304"
+									loading="lazy"
+								/>
+							</picture>
+							<ul class="badges">
+								<li class="badges-item badges-item-pepper">
+									<svg class="badges-pepper" width="16" height="16" viewBox="0 0 16 16">
+										<title>Острое</title>
+										<use href="./sprite.svg#pepper"></use>
+									</svg>
+								</li>
+								<li class="badges-item badges-item-fish">
+									<svg class="badges-fish" width="16" height="16" viewBox="0 0 16 16">
+										<title>Имеется рыба</title>
+										<use href="./sprite.svg#fish"></use>
+									</svg>
+								</li>
+							</ul>
+							<div class="menu-categories__content">
+								<h3 class="menu-categories__content-title">Том Ям&nbsp;с&nbsp;морепродуктами</h3>
+								<p class="menu-categories__content-description">
+									Традиционный тайский суп, на&nbsp;основе кокосового молока и&nbsp;сливок, с&nbsp;добавлением креветок,
+									кальмаров, грибов шиитаке и&nbsp;шампиньонов, помидоров черри и&nbsp;свежей зелени. Подается
+									с&nbsp;паровым тайским рисом</p
+								>
+							</div>
+						</a>
+						<button type="button" title="Добавить в корзину" class="menu-categories__btn button-disabled" disabled
+							>590&nbsp;₽
+						</button>
+					</li>
+				</ul>
+			</section>
+
+			<section class="offer container">
+				<h2 class="offer-title">Акции</h2>
+				<ul class="offer-card">
+					<li class="offer-card__item">
+						<a href="#" class="offer-card__link">
+							<picture class="offer-card__images-container">
+								<source srcset="./images/avif/stock/stock-platina.avif" type="image/avif" />
+								<source srcset="./images/webp/stock/stock-platina.webp" type="image/webp" />
+								<img
+									class="offer-card__image"
+									src="./images/jpg/stock/stock-platina.jpg"
+									alt="Статус Platina привилегированным клиентам"
+									width="640"
+									height="360"
+									loading="lazy"
+								/>
+							</picture>
+							<h3 class="offer-card__title">Статус &laquo;Platina&raquo; привилегированным клиентам</h3>
+							<ul class="shop-info">
+								<li class="shop-info__item"> Скидка&nbsp;10% </li>
+							</ul>
+						</a>
+					</li>
+
+					<li class="offer-card__item">
+						<a href="#" class="offer-card__link">
+							<picture class="offer-card__images-container">
+								<source srcset="./images/avif/stock/stock-packet.avif" type="image/avif" />
+								<source srcset="./images/webp/stock/stock-packet.webp" type="image/webp" />
+								<img
+									class="offer-card__image"
+									src="./images/jpg/stock/stock-packet.jpg"
+									alt="Скидка на все покупки при регистрации"
+									width="640"
+									height="360"
+									loading="lazy"
+								/>
+							</picture>
+							<h3 class="offer-card__title">Скидка на&nbsp;все покупки при регистрации</h3>
+							<ul class="shop-info">
+								<li class="shop-info__item"> Скидка&nbsp;5% </li>
+							</ul>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<section class="offer container">
+				<h2 class="offer-title">События</h2>
+				<ul class="offer-card card-bottom">
+					<li class="offer-card__item">
+						<a href="#" class="offer-card__link">
+							<picture class="offer-card__images-container">
+								<source srcset="./images/avif/events/microphone.avif" type="image/avif" />
+								<source srcset="./images/webp/events/microphone.webp" type="image/webp" />
+								<img
+									class="offer-card__image"
+									src="./images/jpg/events/microphone.jpg"
+									alt="Первый в этом году Stand-Up"
+									width="640"
+									height="360"
+									loading="lazy"
+								/>
+							</picture>
+							<h3 class="offer-card__title">Первый в&nbsp;этом году Stand-Up</h3>
+							<ul class="shop-info">
+								<li class="shop-info__item">
+									<time datetime="2025-01-27">27&nbsp;января</time>
+								</li>
+								<li class="shop-info__item">
+									<time datetime="21:00">В&nbsp;21:00</time>
+								</li>
+							</ul>
+							<span class="status status-soon">Скоро</span>
+						</a>
+					</li>
+
+					<li class="offer-card__item">
+						<a href="#" class="offer-card__link">
+							<picture class="offer-card__images-container">
+								<source srcset="./images/avif/events/balloon.avif" type="image/avif" />
+								<source srcset="./images/webp/events/balloon.webp" type="image/webp" />
+								<img
+									class="offer-card__image"
+									src="./images/jpg/events/balloon.jpg"
+									alt="Скидка на все покупки при регистрации"
+									width="640"
+									height="360"
+									loading="lazy"
+								/>
+							</picture>
+							<h3 class="offer-card__title">День рождения в&nbsp;&laquo;Гастроцех&raquo;</h3>
+							<ul class="shop-info">
+								<li class="shop-info__item">
+									<time datetime="2025-01-21">21&nbsp;января</time>
+								</li>
+								<li class="shop-info__item"> Скидка&nbsp;20% </li>
+							</ul>
+							<span class="status status-closed">Завершен</span>
+						</a>
+					</li>
+				</ul>
+				<button type="button" class="offer-button">Все события</button>
+			</section>
+
+			<section class="offer offer-spacing container">
+				<h2 class="offer-title">Наши заведения</h2>
+				<ul class="offer-card">
+					<li class="offer-card__item">
+						<a href="#" class="offer-card__link">
+							<picture class="offer-card__images-container">
+								<source srcset="./images/avif/venues/food-court.avif" type="image/avif" />
+								<source srcset="./images/webp/venues/food-court.webp" type="image/webp" />
+								<img
+									class="offer-card__image"
+									src="./images/jpg/venues/food-court.jpg"
+									alt="Фудкорт — Кафе «Гастроцех»"
+									width="640"
+									height="360"
+									loading="lazy"
+								/>
+							</picture>
+							<h3 class="offer-card__title">Фудкорт&nbsp;&mdash; Кафе &laquo;Гастроцех&raquo;</h3>
+							<ul class="shop-info">
+								<li class="shop-info__item">
+									Открыт еще
+									<time datetime="PT80M">1&nbsp;ч 20&nbsp;мин</time>
+								</li>
+								<li class="shop-info__item"
+									>c
+									<time datetime="10:00">10:00</time>
+									до
+									<time datetime="23:00">23:00</time>
+								</li>
+							</ul>
+							<span class="status status-open">Открыт</span>
+						</a>
+					</li>
+
+					<li class="offer-card__item">
+						<a href="#" class="offer-card__link">
+							<picture class="offer-card__images-container">
+								<source srcset="./images/avif/venues/pizza.avif" type="image/avif" />
+								<source srcset="./images/webp/venues/pizza.webp" type="image/webp" />
+								<img
+									class="offer-card__image"
+									src="./images/jpg/venues/pizza.jpg"
+									alt="Скидка на все покупки при регистрации"
+									width="640"
+									height="360"
+									loading="lazy"
+								/>
+							</picture>
+							<h3 class="offer-card__title">&laquo;Гастроцех&raquo; Пицца</h3>
+							<ul class="shop-info">
+								<li class="shop-info__item">
+									Открыт еще
+									<time datetime="PT80M">1&nbsp;ч 20&nbsp;мин</time>
+								</li>
+								<li class="shop-info__item"
+									>c
+									<time datetime="10:00">10:00</time>
+									до
+									<time datetime="23:00">23:00</time>
+								</li>
+							</ul>
+							<span class="status status-open">Открыт</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer-inner container">
+				<div class="footer-contact">
+					<div class="footer-contact__details">
+						<a href="tel:01234567890" class="footer-contact__details-phone">+0 (123) 456 78-90</a>
+						<p class="footer-contact__details-open">
+							Прием заказов с
+							<time datetime="10:00">10:00</time> до&nbsp;<time datetime="22:40">22:40</time>
+						</p>
+					</div>
+					<ul class="footer-contact__social">
+						<li class="footer-contact__social-item">
+							<a
+								href="#"
+								class="footer-contact__social-link"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Напишите нам в Telegram"
+							>
+								<svg class="footer-contact__social-icon" width="18" height="15" viewBox="0 0 18 15">
+									<use class="footer-contact__social-fill" href="./sprite.svg#telegram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer-contact__social-item">
+							<a
+								href="#"
+								class="footer-contact__social-link"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Напишите нам в Вконтакте"
+							>
+								<svg class="footer-contact__social-icon" width="20" height="12" viewBox="0 0 20 12">
+									<use class="footer-contact__social-fill" href="./sprite.svg#vk"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer-contact__social-item">
+							<a
+								href="#"
+								class="footer-contact__social-link"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Напишите нам в Whatsapp"
+							>
+								<svg class="footer-contact__social-icon" width="19" height="20" viewBox="0 0 19 20">
+									<use class="footer-contact__social-fill" href="./sprite.svg#whatsapp"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-navigation">
+					<a href="/" class="footer-logo">
+						<img
+							class="footer-logo__img"
+							src="./images/icon/logo.svg"
+							alt="Resto App"
+							width="137"
+							height="22"
+							loading="lazy"
+						/>
+					</a>
+					<nav class="footer-nav">
+						<ul class="footer-menu">
+							<li class="footer-menu__item"><a href="#" class="footer-menu__link">Меню</a></li>
+							<li class="footer-menu__item"><a href="#" class="footer-menu__link">Акции</a></li>
+							<li class="footer-menu__item"><a href="#" class="footer-menu__link">О&nbsp;нас</a></li>
+							<li class="footer-menu__item"><a href="#" class="footer-menu__link">События</a></li>
+							<li class="footer-menu__item"><a href="#" class="footer-menu__link">Зоны доставки</a></li>
+						</ul>
+					</nav>
+					<ul class="footer-store">
+						<li class="footer-store__item">
+							<a
+								class="footer-store__item-link app-store-icon footer-animate-icon"
+								href="#"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Загрузить приложение для заказа пиццы из App Store"
+							>
+							</a>
+						</li>
+						<li class="footer-store__item">
+							<a
+								class="footer-store__item-link google-play-icon footer-animate-icon"
+								href="#"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Загрузить приложение для заказа пиццы из Google Play"
+							>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-info">
+					<span class="footer-info__copyright">Copyright 2024</span>
+					<ul class="footer-info__policy">
+						<li class="footer-info__policy-item">
+							<a href="#" class="footer-info__policy-link">Условия оплаты, получения и&nbsp;возврата</a>
+						</li>
+						<li class="footer-info__policy-item">
+							<a href="#" class="footer-info__policy-link">Политика обработки персональных данных</a>
+						</li>
+						<li class="footer-info__policy-item">
+							<a href="#" class="footer-info__policy-link">Согласие на&nbsp;обработку персональных данных</a>
+						</li>
+					</ul>
+					<ul class="footer-info__card">
+						<li class="footer-info__card-item">
+							<svg class="footer-info-icon" width="32" height="12" viewBox="0 0 32 12">
+								<use class="footer-info__card-fill" href="./sprite.svg#visa"></use>
+							</svg>
+						</li>
+						<li class="footer-info__card-item">
+							<svg class="footer-info-icon" width="22" height="15" viewBox="0 0 22 15">
+								<use class="footer-info__card-fill" href="./sprite.svg#masterCard"></use>
+							</svg>
+						</li>
+						<li class="footer-info__card-item">
+							<svg class="footer-info__card-icon" width="32" height="10" viewBox="0 0 32 10">
+								<use class="footer-info__card-fill" href="./sprite.svg#mir"></use>
+							</svg>
+						</li>
+					</ul>
+				</div>
+				<hr class="footer-line" />
+				<span class="footer-project"
+					>Проект выполнен в&nbsp;рамках стажировки
+					<a class="footer-project__link" href="https://preax.ru" target="_blank" rel="noopener noreferrer"
+						>PREAX</a
+					></span
+				>
+			</div>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>

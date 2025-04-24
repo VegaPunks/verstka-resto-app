@@ -1,0 +1,33 @@
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1c1c1c;
+  padding-block: 12px;
+  gap: 14px;
+  height: 48px;
+}
+
+.bubble-title {
+  font-size: 18px;
+  color: var(--color-white);
+  line-height: 1.3;
+}
+
+.bubble-button {
+  position: relative;
+  background: #393939;
+  border-radius: 50%;
+  min-width: 20px;
+  height: 20px;
+  border: none;
+  padding: 6px;
+}
+
+.bubble-close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: var(--color-white);
+}

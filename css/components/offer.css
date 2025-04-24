@@ -1,0 +1,132 @@
+.offer {
+  padding-block: 32px;
+}
+
+.offer-spacing {
+  padding-bottom: 64px;
+}
+
+.offer-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+  color: var(--color-dark);
+  margin-bottom: 30px;
+}
+
+.offer-card {
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.card-bottom {
+  margin-bottom: 32px;
+}
+
+.offer-card__item {
+  position: relative;
+}
+
+.offer-card__item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--inner-shadow);
+  border-radius: 16px;
+  pointer-events: none;
+}
+
+.offer-card__link {
+  border-radius: 16px;
+}
+
+.offer-card__image {
+  width: 640px;
+  height: 360px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.offer-card__title {
+  position: absolute;
+  left: 32px;
+  bottom: 32px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--color-white);
+  max-width: 576px;
+  z-index: 1;
+  letter-spacing: 0.2px;
+}
+
+.shop-info {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  display: flex;
+  column-gap: 8px;
+  color: var(--color-white);
+}
+
+
+.shop-info__item {
+  border-radius: 8px;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.status {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  border-radius: 8px;
+  padding: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--color-dark);
+}
+
+.status-soon {
+  background: var(--color-status);
+}
+
+.status-open {
+  background: var(--color-status);
+}
+
+.status-closed {
+  background: var(--color-desc);
+  color: var(--color-white);
+}
+
+.offer-button {
+  width: 100%;
+  border: 2px solid var(--color-dark);
+  border-radius: 16px;
+  padding: 16px 24px;
+  background: transparent;
+
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  color: var(--color-dark);
+  transition-duration: 0.2s;
+}
+
+.offer-button:hover {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}

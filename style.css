@@ -1,0 +1,16 @@
+/* common */
+@import "./css/common/fonts.css";
+@import "./css/common/normalize.css";
+@import "./css/common/variables.css";
+
+/* components */
+@import "./css/common/global.css";
+@import "./css/components/bubble.css";
+@import "./css/components/header.css";
+@import "./css/components/badges.css";
+@import "./css/components/menu.css";
+@import "./css/components/offer.css";
+@import "./css/components/footer.css";
+
+
+

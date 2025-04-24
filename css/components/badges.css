@@ -1,0 +1,35 @@
+.badges {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    gap: 8px;
+}
+
+.badges-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    height: 36px;
+    width: 36px;
+}
+
+
+.badges-item-vegetarian {
+    background: #1DAA0F;
+}
+
+.badges-item-pepper {
+    background: #FC7D04;
+}
+
+.badges-item-fish {
+    background: #0094E4;
+}
+
+.badges-vegetarian,
+.badges-pepper,
+.badges-fish {
+    fill: var(--color-white);
+}
